@@ -8,8 +8,10 @@ This project is a Python implementation of the Connect 4 game with a graphical u
   - Interactive board with color-coded cells for players (red for human, yellow for AI).
   - Real-time updates to the board and scores.
 - **AI Opponent**:
-  - AI logic to compete against the human player.
-  - Dynamic gameplay with intelligent moves.
+  - Implements strategic decision-making to maximize its chances of winning.
+  - Evaluates potential moves to block the human player or create winning opportunities.
+  - Uses a scoring heuristic to prioritize moves based on the current board state.
+  - Provides a challenging gameplay experience for players of all skill levels.
 - **Game Over Screen**:
   - Displays the final scores and declares the winner (AI, human, or tie).
 - **Easy to Use**:
@@ -31,10 +33,15 @@ This project is a Python implementation of the Connect 4 game with a graphical u
 final.py: Main script containing the game logic and GUI implementation.
 
 ## How to Play
-The human player starts the game.
+- The human player starts the game.
+- Click on a column to drop your piece.
+- The AI will make its move automatically.
+- The game ends when a player connects four pieces in a row (horizontally, vertically, or diagonally) or the board is full.
 
-Click on a column to drop your piece.
+## AI Opponent Details
+The AI opponent is designed to provide a challenging experience by:
 
-The AI will make its move automatically.
-
-The game ends when a player connects four pieces in a row (horizontally, vertically, or diagonally) or the board is full.
+- **Blocking Moves:** Detecting and blocking potential winning moves by the human player.
+- **Winning Strategies:** Identifying opportunities to create a winning sequence of four pieces.
+- **Heuristic Scoring:** Evaluating the board state to prioritize moves that maximize its chances of winning.
+- **Adaptability:** Dynamically adjusting its strategy based on the current game state
